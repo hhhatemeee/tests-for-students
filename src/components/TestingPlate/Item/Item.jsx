@@ -5,7 +5,9 @@ import './Item.scss';
 const Item = ({ question, id }) => {
   const [isChecked, setChecked] = useState(false);
 
-  const onClick = () => setChecked(!isChecked);
+  const onClick = () => {
+    setChecked(!isChecked);
+  }
 
   return (
     <div className='test-plate__item' onClick={onClick}>

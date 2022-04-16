@@ -11,7 +11,7 @@ const Header = (props) => {
       <div className='test-header__menu-btn'>
         <i className='ico-menu' />
         <div className="test-header__logo">
-          <Logo width={200} height={65} fill={'blue !important'} />
+          <Logo width={180} height={55} fill={'blue !important'} />
         </div>
       </div>
       <div className='test-header__profile'>

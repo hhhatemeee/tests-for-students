@@ -15,10 +15,11 @@
 
     .ico-menu{
       margin-right: 15px;
-      font-size: 40px;
+      font-size: 32px;
       font-weight: 100;
       cursor: pointer;
       transition: .1s all ease-in;
+
       &:hover{
         color:rgba($color-logo, .8);
       }
@@ -31,7 +32,7 @@
     svg{
       g{
         fill: $color-logo;
-
+        
       }
     }
   }
@@ -40,8 +41,8 @@
     transition: .1s all ease-in;
     margin-right: 25px;
     i{
-      font-size: 40px;
-      border: 1px solid $color-logo;
+      font-size: 32px;
+      border: 1px solid $color-logo;  
       border-radius: 50%;
       color: $color-logo;
       padding: 5px;

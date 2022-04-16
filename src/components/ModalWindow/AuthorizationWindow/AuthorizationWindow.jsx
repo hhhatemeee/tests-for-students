@@ -34,7 +34,6 @@ const AuthorizationWindow = ({ title, onClose }) => {
     setPassword(e.target.value);
   };
 
-  console.log('render');
   return (
     <div className='modal-window__overlay'>
       <div className='modal-window__container'>
@@ -51,10 +50,8 @@ const AuthorizationWindow = ({ title, onClose }) => {
               onChange={onChangeLogin}
               isError={isErrorLogin}
               errorText='Поле не может быть пустым'
-
             />
           </div>
-
           <h4>Введите пароль:</h4>
           <InputCustom
             placeHolder='Пароль'

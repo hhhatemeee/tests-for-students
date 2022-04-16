@@ -4,7 +4,7 @@ import cn from 'classnames';
 
 import './Input.scss';
 
-const InputCustom = ({ placeHolder, value, onChange, className, isError, errorText, type = 'text' }) => {
+const Input = ({ placeHolder, value, onChange, className, isError, errorText, type = 'text' }) => {
   return (
     <div className={cn(`input__container ${className || ''}`, { 'input__container_isError': isError })}>
       <div className={cn('input__error-message', { 'input__error-message_isShow': isError })}>
@@ -22,14 +22,14 @@ const InputCustom = ({ placeHolder, value, onChange, className, isError, errorTe
   )
 };
 
-InputCustom.propTypes = {
+Input.propTypes = {
   placeHolder: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
   className: PropTypes.string,
 };
 
-InputCustom.defaultProps = {
+Input.defaultProps = {
   placeHolder: '',
   value: '',
   className: '',
@@ -37,4 +37,7 @@ InputCustom.defaultProps = {
 };
 
 
+const InputCustom = React.memo(Input);
+
 export default InputCustom;
+

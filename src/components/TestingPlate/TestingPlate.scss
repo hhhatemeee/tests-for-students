@@ -2,11 +2,11 @@
 @import "../../scss/variables.scss";
 
 .test-plate{
-  width: 1300px;
+  width: 75%;
   height: 500px;
 
   &__container{
-    margin-top: 200px;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +23,16 @@
       cursor: pointer;
     }
   }
+}
 
-  
+@media screen and (max-width: 390px) {
+  .test-plate{
+    // width: 80%;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 721px){
+  .test-plate{
+    // width: 560px;
+  }
 }

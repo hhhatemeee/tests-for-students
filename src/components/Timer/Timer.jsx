@@ -1,10 +1,10 @@
 import React from 'react';
 import { useTimer } from 'react-timer-hook';
+import cn from 'classnames';
 
 import './Timer.scss';
 
 const Timer = ({ time }) => {
-  console.log(time);
   const { seconds,
     minutes,
     hours,
@@ -17,7 +17,14 @@ const Timer = ({ time }) => {
 
   return (
     <div className='test-plate-footer__timer-container'>
-      <p>{`${minutes} : ${seconds}`}</p>
+      <p className={cn({ isHurry: minutes < 3 })}>
+        {`${minutes.toString().length === 1
+          ? `0${minutes}`
+          : `${minutes}`} 
+          : ${seconds.toString().length === 1
+            ? `0${seconds}`
+            : `${seconds}`}`}
+      </p>
     </div>
   )
 }

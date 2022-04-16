@@ -11,7 +11,7 @@ function App() {
   const onSetShowWindow = () => setShowWindow(!showWindow);
 
   const time = new Date();
-  time.setSeconds(time.getSeconds() + 1800);
+  time.setSeconds(time.getSeconds() + 189);
 
   return (
     <div className="App">
@@ -23,8 +23,7 @@ function App() {
       }
       <Header onSetShowWindow={onSetShowWindow} />
       <div className='test__line' />
-      <TestingPlate />
-      <FooterPlate time={time} />
+      <TestingPlate time={time} />
     </div>
   );
 }

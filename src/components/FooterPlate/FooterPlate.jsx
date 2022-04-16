@@ -6,21 +6,7 @@ import Timer from '../Timer/Timer';
 
 import './FooterPlate.scss';
 
-const FooterPlate = ({ time }) => {
-  const [currentNumber, setCurrentNumber] = useState(1);
-  const count = 30;
-
-  const onHandleNextQuest = () => {
-    if (currentNumber < count) {
-      setCurrentNumber(currentNumber + 1);
-
-      return;
-    }
-
-    setCurrentNumber(1);
-    return;
-  }
-
+const FooterPlate = ({ time, currentNumber, count, onHandleNextQuest, }) => {
   return (
     <div className='test-plate-footer__container'>
       <div className='test-plate-footer'>
@@ -28,6 +14,7 @@ const FooterPlate = ({ time }) => {
         <CurrentNumber currentNumber={currentNumber} count={count} className='current-number' />
         <Button textBtn={'Ответить'} className={'test-plate-footer__button'} onClick={onHandleNextQuest} />
       </div>
+      <Button className='test-plate-footer__end-text' textBtn={'Завершить тест'} />
     </div>
   )
 }
