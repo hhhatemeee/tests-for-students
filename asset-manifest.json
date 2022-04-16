@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/tests-for-students/static/css/main.23c1af2e.css",
+    "main.js": "/tests-for-students/static/js/main.f9a6f280.js",
+    "static/media/ksu-logo.svg": "/tests-for-students/static/media/ksu-logo.1fb40e89cda921b0dd47b6cb758bea83.svg",
+    "static/media/icomoon.svg?hlavf5": "/tests-for-students/static/media/icomoon.754cce7bef178395f0a9.svg",
+    "static/media/icomoon.eot?hlavf5": "/tests-for-students/static/media/icomoon.f0c93e2db2a584104de5.eot",
+    "static/media/icomoon.woff?hlavf5": "/tests-for-students/static/media/icomoon.4469732078c04dad4957.woff",
+    "static/media/icomoon.ttf?hlavf5": "/tests-for-students/static/media/icomoon.332d7035a62878ea5263.ttf",
+    "index.html": "/tests-for-students/index.html",
+    "main.23c1af2e.css.map": "/tests-for-students/static/css/main.23c1af2e.css.map",
+    "main.f9a6f280.js.map": "/tests-for-students/static/js/main.f9a6f280.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23c1af2e.css",
+    "static/js/main.f9a6f280.js"
+  ]
+}
