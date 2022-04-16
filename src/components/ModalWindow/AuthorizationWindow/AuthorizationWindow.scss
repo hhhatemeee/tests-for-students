@@ -54,6 +54,7 @@
     transform: rotate(45deg);
     font-size: 26px;
     cursor: pointer;
+    user-select: none;
 
     &:hover{
       color: rgba($color-logo, .8);

@@ -10,8 +10,9 @@
 
   &__menu-btn{
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 20px 0 0 20px;
+    margin: 10px 0 0 20px;
 
     .ico-menu{
       margin-right: 15px;
@@ -32,13 +33,15 @@
     svg{
       g{
         fill: $color-logo;
-        
+
       }
     }
   }
 
   &__profile{
     transition: .1s all ease-in;
+    display: flex;
+    align-items: baseline;
     margin-right: 25px;
     i{
       font-size: 32px;

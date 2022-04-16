@@ -5,15 +5,10 @@ import cn from 'classnames';
 import './Timer.scss';
 
 const Timer = ({ time }) => {
-  const { seconds,
+  const {
+    seconds,
     minutes,
-    hours,
-    days,
-    isRunning,
-    start,
-    pause,
-    resume,
-    restart, } = useTimer({ expiryTimestamp: time, onExpire: () => console.log('123') });
+  } = useTimer({ expiryTimestamp: time, onExpire: () => console.log('123') });
 
   return (
     <div className='test-plate-footer__timer-container'>
