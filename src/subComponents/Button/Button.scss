@@ -1,0 +1,22 @@
+@import "../../scss/fonts.scss";
+@import "../../scss/variables.scss";
+
+.custom-button__container{
+  background-color: $color-checkbox;
+  padding: 15px 35px;
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: .08s all ease-in;
+  text-align: center;
+  
+  &:hover{
+    background-color: rgba($color-checkbox,.8);
+  }
+
+  &:active{
+    background-color: rgba($color-checkbox,.6);
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../scss/fonts.scss";
+@import "../../scss/variables.scss";
+
+.test-plate{
+  width: 1300px;
+  height: 500px;
+
+  &__container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title{
+    font-weight: 600;
+    color:rgba($color-logo,.6);
+  }
+
+  &__questions{
+    input{
+      cursor: pointer;
+    }
+  }
+
+  
+}

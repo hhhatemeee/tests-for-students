@@ -1,0 +1,63 @@
+@import "../../scss/fonts.scss";
+@import "../../scss/variables.scss";
+
+.test-header{
+  &__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menu-btn{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 20px;
+
+    .ico-menu{
+      margin-right: 15px;
+      font-size: 40px;
+      font-weight: 100;
+      cursor: pointer;
+      transition: .1s all ease-in;
+      &:hover{
+        color:rgba($color-logo, .8);
+      }
+
+      &:active{
+        color:rgba($color-logo, .4);
+      }
+    }
+
+    svg{
+      g{
+        fill: $color-logo;
+
+      }
+    }
+  }
+
+  &__profile{
+    transition: .1s all ease-in;
+    margin-right: 25px;
+    i{
+      font-size: 40px;
+      border: 1px solid $color-logo;
+      border-radius: 50%;
+      color: $color-logo;
+      padding: 5px;
+      cursor: pointer;
+
+      &:hover{
+        color: rgba($color-logo,.8);
+      }
+
+      &:active{
+        color: rgba($color-logo,.5);
+      }
+    }
+  }
+}
+
+i.ico-menu{
+  color: $color-logo;
+}

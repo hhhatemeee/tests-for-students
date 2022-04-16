@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './App.scss';
+import FooterPlate from './components/FooterPlate/FooterPlate';
+import Header from './components/Header/Header';
+import AuthorizationWindow from './components/ModalWindow/AuthorizationWindow/AuthorizationWindow';
+import TestingPlate from './components/TestingPlate/TestingPlate';
 
 function App() {
+  const [showWindow, setShowWindow] = useState(false);
+
+  const onSetShowWindow = () => setShowWindow(!showWindow);
+
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + 1800);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+        showWindow && <AuthorizationWindow
+          title={'Авторизация'}
+          onClose={onSetShowWindow}
+        />
+      }
+      <Header onSetShowWindow={onSetShowWindow} />
+      <div className='test__line' />
+      <TestingPlate />
+      <FooterPlate time={time} />
     </div>
   );
 }
